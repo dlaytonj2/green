@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations | UberHamster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Uber<span>Hamster</span></a>
+        <button class="menu-btn" data-menu-btn type="button">Menu</button>
+        <nav class="nav-links" data-nav>
+          <a href="index.html">Home</a>
+          <a href="reservations.html" class="active">Reservations</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>Reserve your hamster's suite</h1>
+          <p>Submit your details and we will confirm availability within one business day.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <form class="card form-grid">
+            <div class="field">
+              <label for="owner-name">Your Name</label>
+              <input id="owner-name" name="owner-name" type="text" placeholder="Jordan Lee" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@email.com" required />
+            </div>
+            <div class="field">
+              <label for="hamster-name">Hamster Name</label>
+              <input id="hamster-name" name="hamster-name" type="text" placeholder="Mochi" required />
+            </div>
+            <div class="field">
+              <label for="hamster-type">Hamster Type</label>
+              <select id="hamster-type" name="hamster-type">
+                <option>Syrian</option>
+                <option>Dwarf (Campbell/Winter White)</option>
+                <option>Roborovski</option>
+                <option>Chinese</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="check-in">Check-In</label>
+              <input id="check-in" name="check-in" type="date" required />
+            </div>
+            <div class="field">
+              <label for="check-out">Check-Out</label>
+              <input id="check-out" name="check-out" type="date" required />
+            </div>
+            <div class="field full">
+              <label for="notes">Care Notes</label>
+              <textarea id="notes" name="notes" placeholder="Favorite treats, sensitivities, medical instructions, wake cycle..."></textarea>
+            </div>
+            <div class="full">
+              <button class="btn btn-primary" type="submit">Send Reservation Request</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Questions? Email hello@uberhamster.com</div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
